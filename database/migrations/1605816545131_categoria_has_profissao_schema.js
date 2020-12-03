@@ -19,7 +19,7 @@ class CategoriaHasProfissaoSchema extends Schema {
       .integer("id_profissao")
       .unsigned()
       .references("id")
-      .inTable("profissao")
+      .inTable("profissaos")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable()
